@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-		sh 'echo "Hello World"'
+		sh 'uptime'
 		}
 	}
 	stage('Test') {
 		steps {
-		    sh 'echo "Test Hello World"'
+		    sh 'pwd'
 			}
 		}
     }
