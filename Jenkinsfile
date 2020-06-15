@@ -7,11 +7,10 @@ pipeline {
 		}
 	}
 	stage('Test') {
-	    steps {
 		steps {
 		    sh 'echo "Test Hello World"'
+			}
 		}
-	}
     }
 }
 
