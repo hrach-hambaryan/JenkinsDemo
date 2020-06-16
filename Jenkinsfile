@@ -8,7 +8,7 @@ pipeline {
 		}
 		stage('BuildMore') {
 			steps {
-				input message: "Shall we build more?"
+				input message: "Shall we build more??"
 				sh '''
 					echo "We are approved; continue!"
 					ls -lah
@@ -18,3 +18,6 @@ pipeline {
 	}
 }
 
+def func(){
+
+}
