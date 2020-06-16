@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-		sh 'mkdir test1'
+		sh 'mkdir test11'
 		}
 	}
 	stage('Test') {
 		steps {
-		    sh 'cd test1'
+		    sh 'cd test11'
 			sh 'echo "Hello World" >> test.txt'
 			sh 'cat text.txt'
 			}
