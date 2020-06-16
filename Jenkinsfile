@@ -3,14 +3,18 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-		sh 'mkdir test111'
+		sh 'pwd'		
+		sh 'mkdir test1111'
 		}
 	}
 	stage('Test') {
 		steps {
-		    sh 'cd test111'
-			sh "echo version := 1.0.${env.BUILD_ID} >> test.txt"
-			sh 'cat text.txt'
+			sh 'pwd'
+		    sh 'cd test1111'
+			sh 'pwd'
+			sh "echo version := 1.0.${env.BUILD_ID} >> test1111/test.txt"
+			sh 'pwd'
+			sh 'cat test.txt'
 			}
 		}
     }
