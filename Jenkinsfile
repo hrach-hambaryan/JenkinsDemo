@@ -8,8 +8,8 @@ pipeline {
 	}
 	stage('Test') {
 		steps {
-		    sh 'cd test'
-			sh 'echo "Hello World" > test.txt'
+		    sh 'cd test1'
+			sh 'echo "Hello World" >> test.txt'
 			sh 'cat text.txt'
 			}
 		}
